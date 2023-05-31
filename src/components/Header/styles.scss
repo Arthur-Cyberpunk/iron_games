@@ -1,0 +1,59 @@
+.containerHeader {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1.6rem 2rem;
+    font-size: 1.2rem;
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // top: 0;
+    // z-index: 99999;
+
+    .boxLogo {
+        align-items: center;
+        display: flex;
+        font-size: 1.4rem;
+        gap: 1rem;
+
+        .logoController {
+            width: 4rem;
+        }
+
+        .boxNameLogo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .boxOptions {
+        display: flex;
+        gap: 2rem;
+        
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .boxLogin {
+        align-items: center;
+        display: flex;
+        gap: 2rem;
+
+        a {
+            text-decoration: none;
+        }
+
+        .register {
+            background-color: #6879C2;
+            border-radius: 3px;
+            box-shadow: 0 10px 15px 0 rgba(104,121,194,.35);
+            padding: 1rem 1.6rem;
+            transition: all .3s;
+        }
+    }
+}
