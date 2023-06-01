@@ -1,0 +1,57 @@
+.container {
+    position: relative;
+    background-color: #000;
+
+    .boxBook {
+        margin: 0 auto!important;
+        max-width: 133rem!important;
+        padding: 0 2.5rem!important;
+
+        .boxContent {
+            //margin: 0 auto 10rem;
+        }
+
+        .boxForm {
+            background-color: #fff;
+            //background-image: url(/static/media/book-bg.6f629a1….png);
+            //background-position: 50%;
+            //background-repeat: no-repeat;
+            //background-size: cover;
+            border-radius: 5px;
+            box-shadow: 0 10px 20px 0 rgba(89, 108, 194, 0.767);
+            color: #010103;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            padding: 4rem 4.5rem 5rem 5.5rem;
+            position: relative;
+            width: 100%;
+
+            h2 {
+                
+            }
+
+            .formContent {
+
+
+                .boxLabel {
+                    display: flex;
+
+
+                    label {
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        margin-bottom: 1.2rem;
+
+
+                        .iconGame {
+                            font-size: 2rem;
+
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+}
