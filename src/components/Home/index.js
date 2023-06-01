@@ -15,13 +15,11 @@ const Home = () => {
             Rent the car of your dreams. Unbeatable prices, unlimited miles,
             flexible pick-up options and much more.
           </p>
+          <div>
+            <Link>Book Ride</Link>
+            <Link>Learn More</Link>
+          </div>
         </div>
-        <div>
-          <Link>Book Ride</Link>
-          <Link>Learn More</Link>
-        </div>
-      </div>
-      <div>
         <img className="logoController" src={controle} alt=""></img>
       </div>
     </section>
