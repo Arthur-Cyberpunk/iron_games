@@ -1,34 +1,68 @@
+import { useState } from "react";
 import { GiRetroController } from "react-icons/gi";
+import nintendoswitch from "../../assets/nintendoswitch.png";
+import playstation4pro from "../../assets/playstation4pro.png";
+import playstation5 from "../../assets/playstation5.png";
+import xboxonex from "../../assets/xboxonex.png";
+import xboxseriess from "../../assets/xboxseriess.png";
+import xboxseriesx from "../../assets/xboxseriesx.png";
 import "./styles.scss";
 
 const BookGame = () => {
+  const [game, setGame] = useState("");
+
+  const handleGame = (event) => {
+    setGame(event.target.value);
+  };
+
+  let imgUrl;
+  switch (game) {
+    case "xboxseriesx":
+      imgUrl = xboxseriesx;
+      break;
+    case "xboxseriess":
+      imgUrl = xboxseriess;
+      break;
+    case "playstation5":
+      imgUrl = playstation5;
+      break;
+    case "xboxonex":
+      imgUrl = xboxonex;
+      break;
+    case "playstation4pro":
+      imgUrl = playstation4pro;
+      break;
+    case "nintendoswitch":
+      imgUrl = nintendoswitch;
+      break;
+    default:
+      imgUrl = "";
+  }
+
   return (
     <section className="container">
-      <div className="boxBook">
-        <div className="boxContent">
-          <div className="boxForm">
-            <h2>Book a car</h2>
-            <form className="formContent">
-              <div className="boxLabel">
-                <label>
-                  <GiRetroController className="iconGame" />
-                  &nbsp;Select Your Car Type
-                </label>
-                <select>
-                  <option></option>
-                  <option value="Audi A1 S-Line">Xbox Series X</option>
-                  <option value="Audi A1 S-Line">Xbox Series S</option>
-                  <option value="Audi A1 S-Line">Playstation 5</option>
-                  <option value="Audi A1 S-Line">Xbox One X</option>
-                  <option value="Audi A1 S-Line">Playstation 4</option>
-                  <option value="Audi A1 S-Line">Nintendo Switch</option>
-                </select>
-              </div>
-              <button></button>
-            </form>
+      <div className="boxForm">
+        <h2>Book a game</h2>
+        <form className="formContent">
+          <div className="boxLabel">
+            <label>
+              <GiRetroController className="iconGame" />
+              &nbsp;Select Your Game Type
+            </label>
+            <select onChange={handleGame}>
+              <option></option>
+              <option value={"xboxseriesx"}>Xbox Series X</option>
+              <option value={"xboxseriess"}>Xbox Series S</option>
+              <option value={"playstation5"}>Playstation 5</option>
+              <option value={"xboxonex"}>Xbox One X</option>
+              <option value={"playstation4pro"}>Playstation 4 Pro</option>
+              <option value={"nintendoswitch"}>Nintendo Switch</option>
+            </select>
           </div>
-        </div>
+          <button>Search</button>
+        </form>
       </div>
+      <img className="gameImage" src={imgUrl} alt=""></img>
     </section>
   );
 };
