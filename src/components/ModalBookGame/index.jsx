@@ -4,11 +4,15 @@ import "./styles.scss";
 
 const ModalBookGame = (props) => {
 
+  const closeModal = () => {
+    props.setModalOpen(false)
+  }
+
   return (
     <section className="containerModal">
       <div className="modalTitle">
         <h2>Complete Reservation</h2>
-        <BsXLg />
+        <BsXLg className="closeX" onClick={closeModal}/>
       </div>
       <div className="modalMessage">
         <h4>

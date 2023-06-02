@@ -1,7 +1,4 @@
 .containerModal {
-    opacity: 0;
-    display: none;
-  
     flex-direction: column;
     position: fixed;
     overflow-x: hidden;
@@ -10,10 +7,10 @@
     top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 83rem;
+    //width: 83rem;
     height: 100vh;
-    border: 2px solid white;
-    background-color: rgba(255, 255, 255);
+    border: 2px solid #777;
+    background-color: #000;
     padding-right: 2px;
     color: white;
 
@@ -26,6 +23,15 @@
     padding: 1rem 1.5rem;
     font-size: 1rem;
     text-transform: uppercase;
+    font-family: "Fira Code", monospace;
+
+    h2 {
+        font-family: "Fira Code", monospace;
+    }
+
+    .closeX {
+        font-size: 1.8rem;
+    }
   }
 
   .modalMessage {
@@ -39,6 +45,7 @@
       color: #fff;
       font-size: 1.2rem;
       font-weight: 700;
+      font-family: "Fira Code", monospace;
 
       i {
         width: 50%;
@@ -50,6 +57,7 @@
       font-size: 1rem;
       font-weight: 500;
       line-height: 1.6;
+      font-family: "Fira Code", monospace;
     }
   }
 
@@ -63,9 +71,11 @@
     h5 {
       font-size: 1.2rem;
       color: #6879c2;
+      font-family: "Fira Code", monospace;
 
       span {
         color: #fff;
+        font-family: "Fira Code", monospace;
       }
     }
 
@@ -83,6 +93,7 @@
       font-size: 1.2rem;
       margin-bottom: 1.5rem;
       text-transform: uppercase;
+      font-family: "Fira Code", monospace;
     }
 
     .modalForm {
@@ -105,6 +116,7 @@
             color: #777;
             font-size: 1rem;
             font-weight: 500;
+            font-family: "Fira Code", monospace;
           }
 
           input {
@@ -118,6 +130,7 @@
 
           p {
             font-size: 0.7rem;
+            font-family: "Fira Code", monospace;
           }
         }
       }
@@ -138,6 +151,7 @@
             color: #777;
             font-size: 1rem;
             font-weight: 500;
+            font-family: "Fira Code", monospace;
           }
 
           input {
@@ -151,6 +165,7 @@
 
           p {
             font-size: 0.7rem;
+            font-family: "Fira Code", monospace;
           }
         }
       }
@@ -177,6 +192,7 @@
           p {
             color: #777;
             font-size: 1rem;
+            font-family: "Fira Code", monospace;
           }
         }
 
@@ -188,6 +204,7 @@
           font-weight: 700;
           padding: 1rem 2.5rem;
           transition: all 0.2s;
+          font-family: "Fira Code", monospace;
         }
       }
     }

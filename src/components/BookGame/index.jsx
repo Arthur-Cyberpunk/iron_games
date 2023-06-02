@@ -15,7 +15,6 @@ const BookGame = () => {
   const [error, setError] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
 
-
   const handleGame = (event) => {
     setGame(event.target.value);
   };
@@ -25,31 +24,31 @@ const BookGame = () => {
   switch (game) {
     case "xboxseriesx":
       imgUrl = xboxseriesx;
-      nameGame = 'Xbox Series X';
+      nameGame = "Xbox Series X";
       break;
     case "xboxseriess":
       imgUrl = xboxseriess;
-      nameGame = 'Xbox Series S';
+      nameGame = "Xbox Series S";
       break;
     case "playstation5":
       imgUrl = playstation5;
-      nameGame = 'Playstation 5';
+      nameGame = "Playstation 5";
       break;
     case "xboxonex":
       imgUrl = xboxonex;
-      nameGame = 'Xbox One X';
+      nameGame = "Xbox One X";
       break;
     case "playstation4pro":
       imgUrl = playstation4pro;
-      nameGame = 'Playstation 4';
+      nameGame = "Playstation 4";
       break;
     case "nintendoswitch":
       imgUrl = nintendoswitch;
-      nameGame = 'Nintendo Switch';
+      nameGame = "Nintendo Switch";
       break;
     default:
       imgUrl = mario;
-      nameGame = ''
+      nameGame = "";
   }
 
   const openModal = (event) => {
@@ -58,41 +57,49 @@ const BookGame = () => {
       setError(true);
     } else {
       setError(false);
-      setModalOpen(true)
+      setModalOpen(true);
     }
   };
 
   return (
     <>
-    <section className="containerBookGame">
-      <div className="boxForm">
-        <h2>Book a game</h2>
-        {error ? <p>Field required!</p> : <></>}
-        <form className="formContent">
-          <div className="boxLabel">
-            <label>
-              <GiRetroController className="iconGame" />
-              &nbsp;Select Your Game Type
-            </label>
-            <select onChange={handleGame}>
-              <option></option>
-              <option value={"xboxseriesx"}>Xbox Series X</option>
-              <option value={"xboxseriess"}>Xbox Series S</option>
-              <option value={"playstation5"}>Playstation 5</option>
-              <option value={"xboxonex"}>Xbox One X</option>
-              <option value={"playstation4pro"}>Playstation 4 Pro</option>
-              <option value={"nintendoswitch"}>Nintendo Switch</option>
-            </select>
-          </div>
-          <button type="submit" onClick={openModal}>
-            Search
-          </button>
-        </form>
-      </div>
-      <img className="gameImage" src={imgUrl} alt=""></img>
-    </section>
-    {modalOpen ? <ModalBookGame imgUrl={imgUrl} nameGame={nameGame}/> : <></> }
-    
+      <section className="containerBookGame">
+        {modalOpen ? <div className="modalOverlay"></div> : <></>}
+        <div className="boxForm">
+          <h2>Book a game</h2>
+          {error ? <p>Field required!</p> : <></>}
+          <form className="formContent">
+            <div className="boxLabel">
+              <label>
+                <GiRetroController className="iconGame" />
+                &nbsp;Select Your Game Type
+              </label>
+              <select onChange={handleGame}>
+                <option></option>
+                <option value={"xboxseriesx"}>Xbox Series X</option>
+                <option value={"xboxseriess"}>Xbox Series S</option>
+                <option value={"playstation5"}>Playstation 5</option>
+                <option value={"xboxonex"}>Xbox One X</option>
+                <option value={"playstation4pro"}>Playstation 4 Pro</option>
+                <option value={"nintendoswitch"}>Nintendo Switch</option>
+              </select>
+            </div>
+            <button type="submit" onClick={openModal}>
+              Search
+            </button>
+          </form>
+        </div>
+        <img className="gameImage" src={imgUrl} alt=""></img>
+      </section>
+      {modalOpen ? (
+        <ModalBookGame
+          imgUrl={imgUrl}
+          nameGame={nameGame}
+          setModalOpen={setModalOpen}
+        />
+      ) : (
+        <></>
+      )}
     </>
   );
 };
