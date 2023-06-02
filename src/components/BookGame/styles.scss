@@ -27,17 +27,23 @@
     h2 {
       font-size: 1.8rem;
       font-weight: 700;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       font-family: "Fira Code", monospace;
     }
 
+    p {
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        padding: 1rem 1.4rem;
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        border-radius: 0.8rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
     .formContent {
-        //width: 50%;
-      //grid-gap: 2rem;
-    //   display: grid;
-    //   gap: 2rem;
-    //   grid-template-columns: 1fr 1fr;
-    //   grid-template-rows: auto auto;
       align-items: center;
 
       .boxLabel {

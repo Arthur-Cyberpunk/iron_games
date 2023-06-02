@@ -10,6 +10,7 @@ import "./styles.scss";
 
 const BookGame = () => {
   const [game, setGame] = useState("");
+  const [error, setError] = useState(false);
 
   const handleGame = (event) => {
     setGame(event.target.value);
@@ -39,10 +40,20 @@ const BookGame = () => {
       imgUrl = "";
   }
 
+  const openModal = (event) => {
+    event.preventDefault();
+    if (imgUrl === "") {
+      setError(true);
+    } else {
+      setError(false);
+    }
+  };
+
   return (
     <section className="container">
       <div className="boxForm">
         <h2>Book a game</h2>
+        {error ? <p>Field required!</p> : <></>}
         <form className="formContent">
           <div className="boxLabel">
             <label>
@@ -59,7 +70,9 @@ const BookGame = () => {
               <option value={"nintendoswitch"}>Nintendo Switch</option>
             </select>
           </div>
-          <button>Search</button>
+          <button type="submit" onClick={openModal}>
+            Search
+          </button>
         </form>
       </div>
       <img className="gameImage" src={imgUrl} alt=""></img>
