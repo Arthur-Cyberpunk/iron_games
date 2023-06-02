@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { GiRetroController } from "react-icons/gi";
+import mario from "../../assets/mario.png";
 import nintendoswitch from "../../assets/nintendoswitch.png";
 import playstation4pro from "../../assets/playstation4pro.png";
 import playstation5 from "../../assets/playstation5.png";
@@ -37,12 +38,12 @@ const BookGame = () => {
       imgUrl = nintendoswitch;
       break;
     default:
-      imgUrl = "";
+      imgUrl = mario;
   }
 
   const openModal = (event) => {
     event.preventDefault();
-    if (imgUrl === "") {
+    if (imgUrl === mario) {
       setError(true);
     } else {
       setError(false);

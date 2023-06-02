@@ -2,14 +2,13 @@
   position: relative;
   background-color: #000;
   padding: 0 20%;
-  //height: 20%;
+  height: 50vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   .boxForm {
     width: 50%;
-    height: 20%;
     background-color: #fff;
     //background-image: url(/static/media/book-bg.6f629a1….png);
     //background-position: 50%;
@@ -32,15 +31,15 @@
     }
 
     p {
-        color: #721c24;
-        background-color: #f8d7da;
-        border-color: #f5c6cb;
-        padding: 1rem 1.4rem;
-        margin-bottom: 1rem;
-        border: 1px solid transparent;
-        border-radius: 0.8rem;
-        font-size: 1rem;
-        font-weight: 500;
+      color: #721c24;
+      background-color: #f8d7da;
+      border-color: #f5c6cb;
+      padding: 1rem 1.4rem;
+      margin-bottom: 1rem;
+      border: 1px solid transparent;
+      border-radius: 0.8rem;
+      font-size: 1rem;
+      font-weight: 500;
     }
 
     .formContent {
@@ -77,20 +76,19 @@
         }
       }
 
-        button {
-          width: 100%;
-          align-self: self-end;
-          background-color: #6879c2;
-          border: none;
-          box-shadow: 0 10px 15px rgba(104, 121, 194, 0.35);
-          cursor: pointer;
-          color: #fff;
-          font-size: 1rem;
-          font-weight: 500;
-          padding: 0.6rem;
-          transition: all 0.3s;
-        }
-      
+      button {
+        width: 100%;
+        align-self: self-end;
+        background-color: #6879c2;
+        border: none;
+        box-shadow: 0 10px 15px rgba(104, 121, 194, 0.35);
+        cursor: pointer;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0.6rem;
+        transition: all 0.3s;
+      }
     }
   }
 
