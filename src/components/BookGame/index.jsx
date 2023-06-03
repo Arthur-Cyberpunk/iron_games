@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BsXLg } from "react-icons/bs";
 import { GiRetroController } from "react-icons/gi";
 import mario from "../../assets/mario.png";
 import nintendoswitch from "../../assets/nintendoswitch.png";
@@ -13,6 +14,7 @@ import "./styles.scss";
 const BookGame = () => {
   const [game, setGame] = useState("");
   const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
 
   const handleGame = (event) => {
@@ -55,10 +57,19 @@ const BookGame = () => {
     event.preventDefault();
     if (imgUrl === mario) {
       setError(true);
+      setSuccess(false);
     } else {
       setError(false);
       setModalOpen(true);
     }
+  };
+
+  const closeError = () => {
+    setError(false);
+  };
+
+  const closeSuccess = () => {
+    setSuccess(false);
   };
 
   return (
@@ -67,7 +78,22 @@ const BookGame = () => {
         {modalOpen ? <div className="modalOverlay"></div> : <></>}
         <div className="boxForm">
           <h2>Book a game</h2>
-          {error ? <p>Field required!</p> : <></>}
+          {error && !success ? (
+            <p className="error">
+              Field required!
+              <BsXLg className="iconX" onClick={closeError} />
+            </p>
+          ) : (
+            <></>
+          )}
+          {success && !error ? (
+            <p className="success">
+              Check your email to confirm an order
+              <BsXLg className="iconX" onClick={closeSuccess} />
+            </p>
+          ) : (
+            <></>
+          )}
           <form className="formContent">
             <div className="boxLabel">
               <label>
@@ -96,6 +122,7 @@ const BookGame = () => {
           imgUrl={imgUrl}
           nameGame={nameGame}
           setModalOpen={setModalOpen}
+          setSuccess={setSuccess}
         />
       ) : (
         <></>

@@ -40,7 +40,7 @@
       font-family: "Fira Code", monospace;
     }
 
-    p {
+    .error {
       color: #721c24;
       background-color: #f8d7da;
       border-color: #f5c6cb;
@@ -50,6 +50,32 @@
       border-radius: 0.8rem;
       font-size: 1rem;
       font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .iconX {
+        cursor: pointer;
+      }
+    }
+
+    .success{
+      color: #3a8340;
+      background-color: #a3d8a6;
+      border-color: #abc9ac;
+      padding: 1rem 1.4rem;
+      margin-bottom: 1rem;
+      border: 1px solid transparent;
+      border-radius: 0.8rem;
+      font-size: 1rem;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .iconX {
+        cursor: pointer;
+      }
     }
 
     .formContent {

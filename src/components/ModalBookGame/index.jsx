@@ -8,6 +8,14 @@ const ModalBookGame = (props) => {
     props.setModalOpen(false)
   }
 
+  const confirmPurchase = (e) => {
+    e.preventDefault();
+    props.setModalOpen(false)
+    props.setSuccess(true)
+    //const doneMsg = document.querySelector(".booking-done");
+    //doneMsg.style.display = "flex";
+  };
+
   return (
     <section className="containerModal">
       <div className="modalTitle">
@@ -86,7 +94,7 @@ const ModalBookGame = (props) => {
               <p>Please send me latest news and updates</p>
             </div>
             <div>
-              <button>Buy Now</button>
+              <button onClick={confirmPurchase}>Buy Now</button>
             </div>
           </span>
         </form>
