@@ -2,9 +2,6 @@
   width: 100%;
   height: 80vh;
   padding: 0 10%;
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
   background-color: #000;
   color: #fff;
 
@@ -16,11 +13,15 @@
     justify-content: center;
     gap: 8rem;
 
+    @media (max-width: 400px) {
+      margin-top: 4rem;
+    }
+
     .textInfo {
-      //display: flex;
-      //flex-direction: column;
-      //margin-top: 5rem;
-      max-width: 40rem;
+      @media (max-width: 800px) {
+        text-align: center;
+        justify-content: center;
+      }
 
       h4 {
         font-size: 1.8rem;
@@ -49,6 +50,11 @@
         font-size: 1rem;
         gap: 1rem;
 
+        @media (max-width: 800px) {
+          text-align: center;
+          justify-content: center;
+        }
+
         a {
           background-color: #6879c2;
           border-radius: 3px;
@@ -74,7 +80,11 @@
     }
 
     .logoController {
-        width: 25%;
+      width: 25%;
+
+      @media (max-width: 800px) {
+        display: none;
+      }
     }
   }
 }

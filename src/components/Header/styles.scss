@@ -1,125 +1,125 @@
 .containerHeader {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 1.6rem 2rem;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+  background-color: #000;
+  color: #fff;
+
+  @media (max-width: 1000px) {
+    justify-content: space-between;
+  }
+
+  .boxLogo {
     align-items: center;
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 1.6rem 2rem;
-    font-size: 1.2rem;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 99999;
-    background-color: #000;
-    color: #fff;
+    font-size: 1.4rem;
+    gap: 1rem;
+
+    .logoController {
+      width: 4rem;
+    }
+
+    .boxNameLogo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .boxOptions {
+    display: flex;
+    gap: 2rem;
 
     @media (max-width: 1000px) {
-        justify-content: space-between;
+      display: none;
     }
 
-    .boxLogo {
-        align-items: center;
-        display: flex;
-        font-size: 1.4rem;
-        gap: 1rem;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
 
-        .logoController {
-            width: 4rem;
-        }
+  .boxLogin {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
 
-        .boxNameLogo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    @media (max-width: 1000px) {
+      display: none;
     }
 
-    .boxOptions {
-        display: flex;
-        gap: 2rem;
-
-        @media (max-width: 1000px) {
-            display: none;
-        }
-        
-        a {
-            text-decoration: none;
-            color: #fff;
-        }
+    a {
+      text-decoration: none;
+      color: #fff;
     }
 
-    .boxLogin {
-        align-items: center;
-        display: flex;
-        gap: 2rem;
+    .register {
+      background-color: #6879c2;
+      border-radius: 3px;
+      box-shadow: 0 10px 15px 0 rgba(104, 121, 194, 0.35);
+      padding: 1rem 1.6rem;
+      transition: all 0.3s;
+    }
+  }
 
-        @media (max-width: 1000px) {
-            display: none;
-        }
+  .iconHamburguer {
+    color: #fff;
+    font-size: 2rem;
+    display: none;
 
-        a {
-            text-decoration: none;
-            color: #fff;
-        }
+    @media (max-width: 1000px) {
+      display: inherit;
+    }
+  }
 
-        .register {
-            background-color: #6879C2;
-            border-radius: 3px;
-            box-shadow: 0 10px 15px 0 rgba(104,121,194,.35);
-            padding: 1rem 1.6rem;
-            transition: all .3s;
-        }
+  .menu {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: #000;
+    z-index: 9999999;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+    .iconX {
+      position: absolute;
+      right: 2rem;
+      top: 2.4rem;
+      font-size: 2rem;
+      cursor: pointer;
+      color: #fff;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      list-style: none;
     }
 
-    .iconHamburguer {
-        color: #fff;
-        font-size: 2rem;
-        display: none;
-    
-        @media (max-width: 1000px) {
-          display: inherit;
-        }
+    li a {
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
     }
-
-    .menu {
-        display: flex;
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: -100%;
-        background-color: #fff;
-        z-index: 9999999;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        transition: all 0.3s ease-in-out;
-    
-        .iconX {
-          position: absolute;
-          right: 2rem;
-          top: 2.4rem;
-          font-size: 2rem;
-          cursor: pointer;
-          color: #000;
-        }
-        ul {
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-            list-style: none;
-          }
-      
-          li a {
-            color: #2d2e32;
-            font-weight: 600;
-            text-decoration: none;
-          }
-    }
+  }
 }
 
 .open-nav {
-    left: 0!important;
+  left: 0 !important;
 }

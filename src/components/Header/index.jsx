@@ -12,8 +12,6 @@ const Header = () => {
     setNav(!nav);
   };
 
-  console.log(nav)
-
   return (
     <nav className="containerHeader">
       <div className="boxLogo">

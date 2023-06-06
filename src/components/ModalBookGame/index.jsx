@@ -12,8 +12,6 @@ const ModalBookGame = (props) => {
     e.preventDefault();
     props.setModalOpen(false)
     props.setSuccess(true)
-    //const doneMsg = document.querySelector(".booking-done");
-    //doneMsg.style.display = "flex";
   };
 
   return (

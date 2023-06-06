@@ -1,18 +1,21 @@
 .containerModal {
-    flex-direction: column;
-    position: fixed;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    z-index: 999999999999;
-    top: 54%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    //width: 83rem;
-    height: 100vh;
-    border: 2px solid #777;
-    background-color: #000;
-    padding-right: 2px;
-    color: white;
+  flex-direction: column;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 999999999999;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  border: 2px solid #777;
+  background-color: #000;
+  padding-right: 2px;
+  color: white;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 
   .modalTitle {
     align-items: center;
@@ -26,11 +29,11 @@
     font-family: "Fira Code", monospace;
 
     h2 {
-        font-family: "Fira Code", monospace;
+      font-family: "Fira Code", monospace;
     }
 
     .closeX {
-        font-size: 1.8rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -107,6 +110,10 @@
         grid-template-columns: 1fr 1fr;
         padding: 1rem 0;
 
+        @media (max-width: 650px) {
+          grid-template-columns: 1fr;
+        }
+
         span {
           display: flex;
           flex-direction: column;
@@ -178,6 +185,11 @@
         font-size: 1.6rem;
         margin-bottom: 3rem;
         margin-top: 2rem;
+        gap: 0.2rem;
+
+        @media (max-width: 550px) {
+          flex-direction: column;
+        }
 
         div {
           display: flex;
@@ -202,9 +214,14 @@
           cursor: pointer;
           font-size: 1.2rem;
           font-weight: 700;
-          padding: 1rem 2.5rem;
+          padding: 1rem 1.2rem;
           transition: all 0.2s;
           font-family: "Fira Code", monospace;
+
+          @media (max-width: 550px) {
+            padding: 1rem 2rem;
+            margin-top: 1rem;
+          }
         }
       }
     }
