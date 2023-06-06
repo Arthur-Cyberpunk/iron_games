@@ -1,4 +1,67 @@
-.container {
-    height: 100vh;
+.sectionPlan {
+    width: 100%;
+    padding: 0 10%;
     background-color: #000;
+    color: #fff;
+
+    .container {
+        
+        .boxPlanPlay{
+            display: flex;
+            flex-direction: column;
+
+            .boxTitle {
+                text-align: center;
+                color: #fff;
+
+                h3 {
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                }
+
+                h2 {
+                    font-size: 3.2rem;
+                    margin: 1rem 0 3rem;
+                }
+            }
+        }
+
+        .containerConcernsBoxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            margin-top: 3rem;
+            padding: 0 3rem;
+            
+            @media (max-width: 1200px) {
+                grid-template-columns: 1fr;
+                gap: 1rem;  
+            } 
+
+            .boxConcerns {
+                padding: 1rem 4rem;
+                text-align: center;
+
+                @media (max-width: 1200px) {
+                    padding: unset;    
+                }
+
+                img {
+                    width: 40%;
+                }
+
+                h3 {
+                    font-size: 1.6rem;
+                    margin-bottom: 1rem;
+                    font-family: "Fira Code", monospace;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    line-height: 1.4;
+                    font-family: "Fira Code", monospace;
+                }
+            }
+        }
+    }
 }
