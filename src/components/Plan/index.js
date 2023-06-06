@@ -9,20 +9,20 @@ const Plan = () => {
       <div className="container">
         <div className="boxPlanPlay">
           <div className="boxTitle">
-            <h3>Plan your trip now</h3>
-            <h2>Quick & easy car rental</h2>
+            <h3>Plan your next gameplay</h3>
+            <h2>Quick & easy Video Game</h2>
           </div>
           <div className="containerConcernsBoxes">
             <div className="boxConcerns">
-              <img src={controlps}></img>
-              <h3>Select Car</h3>
+              <img src={selectgame}></img>
+              <h3>Select Game</h3>
               <p>
-                We offers a big range of vehicles for all your driving needs. We
-                have the perfect car to meet your needs
+                We offers a big range of video games for all your playing needs.
+                We have the perfect video game to meet your needs
               </p>
             </div>
             <div className="boxConcerns">
-              <img src={selectgame}></img>
+              <img src={support}></img>
               <h3>Contact Operator</h3>
               <p>
                 Our knowledgeable and friendly operators are always ready to
@@ -30,11 +30,11 @@ const Plan = () => {
               </p>
             </div>
             <div className="boxConcerns">
-              <img src={support}></img>
-              <h3>Let's Drive</h3>
+              <img src={controlps}></img>
+              <h3>Let's Play</h3>
               <p>
-                Whether you're hitting the open road, we've got you covered with
-                our wide range of cars
+                Whether you need a new perfect Game, we've got you covered with
+                our wide range of video games
               </p>
             </div>
           </div>
