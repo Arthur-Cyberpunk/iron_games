@@ -1,4 +1,5 @@
 import BookGame from "./components/BookGame";
+import GameModels from "./components/GameModels";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Plan from "./components/Plan";
@@ -11,6 +12,7 @@ function App() {
       <Home />
       <BookGame />
       <Plan />
+      <GameModels />
     </>
   );
 }
