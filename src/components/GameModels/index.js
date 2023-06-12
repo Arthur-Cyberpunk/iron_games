@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles.scss";
 
 const GameModels = () => {
@@ -56,7 +57,7 @@ const GameModels = () => {
                     <span></span>
                   </div>
                 </div>
-                <a>Buy Now</a>
+                <Link>Buy Now</Link>
               </div>
             </div>
           </div>
