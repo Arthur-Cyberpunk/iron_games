@@ -10,7 +10,7 @@ const CardBox = () => {
       </div>
       <div className="boxDescription">
         <div className="boxPrice">
-          <span>$299</span>/ rent per day
+          <span>Price: $299</span>
         </div>
         <div className="boxDescriptionTable">
           <div className="boxDescriptionColumn">
