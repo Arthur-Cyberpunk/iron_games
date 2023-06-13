@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import CardBox from "../CardBox";
 import "./styles.scss";
 
 const GameModels = () => {
@@ -22,43 +22,8 @@ const GameModels = () => {
             <button>Playstation 4</button>
             <button>Nintendo Switch</button>
           </div>
-          <div>
-            <div>
-              <img></img>
-            </div>
-            <div>
-              <div>
-                <span></span>
-              </div>
-              <div>
-                <div>
-                  <span>Model</span>
-                  <span></span>
-                </div>
-                <div>
-                  <span>Mark</span>
-                  <span></span>
-                </div>
-                <div>
-                  <span>HD/SSD</span>
-                  <span></span>
-                </div>
-                <div>
-                  <span>Teraflops</span>
-                  <span></span>
-                </div>
-                <div>
-                  <span>Video</span>
-                  <span></span>
-                </div>
-                <div>
-                  <span>Audio</span>
-                  <span></span>
-                </div>
-              </div>
-              <Link>Buy Now</Link>
-            </div>
-          </div>
+
+          <CardBox />
         </div>
       </div>
     </section>
