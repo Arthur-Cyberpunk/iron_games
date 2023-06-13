@@ -4,7 +4,7 @@ import CardBox from "../CardBox";
 import "./styles.scss";
 
 const GameModels = () => {
-  const [active, setActive] = useState("SecondCar");
+  const [active, setActive] = useState("FourthCar");
   const [colorBtn, setColorBtn] = useState("btn1");
 
   const btnID = (id) => {
@@ -31,7 +31,7 @@ const GameModels = () => {
             <button
               className={`${coloringButton("btn1")}`}
               onClick={() => {
-                setActive("SecondCar");
+                setActive("FirstCar");
                 btnID("btn1");
               }}
             >
@@ -41,7 +41,7 @@ const GameModels = () => {
               className={`${coloringButton("btn2")}`}
               id="btn2"
               onClick={() => {
-                setActive("FirstCar");
+                setActive("SecondCar");
                 btnID("btn2");
               }}
             >
@@ -89,13 +89,12 @@ const GameModels = () => {
             </button>
           </div>
 
-          {/* <CardBox /> */}
-          {active === "FirstCar" && <CardBox data={GAME_DATA} gameID="0" />}
-          {active === "SecondCar" && <CardBox data={GAME_DATA} gameID="1" />}
-          {active === "ThirdCar" && <CardBox data={GAME_DATA} gameID="2" />}
-          {active === "FourthCar" && <CardBox data={GAME_DATA} gameID="3" />}
-          {active === "FifthCar" && <CardBox data={GAME_DATA} gameID="4" />}
-          {active === "SixthCar" && <CardBox data={GAME_DATA} gameID="5" />}
+          {active === "FirstCar" && <CardBox data={GAME_DATA} gameID={0} />}
+          {active === "SecondCar" && <CardBox data={GAME_DATA} gameID={1} />}
+          {active === "ThirdCar" && <CardBox data={GAME_DATA} gameID={2} />}
+          {active === "FourthCar" && <CardBox data={GAME_DATA} gameID={3} />}
+          {active === "FifthCar" && <CardBox data={GAME_DATA} gameID={4} />}
+          {active === "SixthCar" && <CardBox data={GAME_DATA} gameID={5} />}
         </div>
       </div>
     </section>
