@@ -1,46 +1,57 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.scss";
 
-const CardBox = () => {
+const CardBox = (data, gameID) => {
+  const [gameLoad, setGameLoad] = useState(true);
+  console.log(data[gameID]);
+  console.log(gameID);
   return (
-    <div className="boxGames">
+    // {data[gameID].map((game, id) => (
+    <div key={id} className="boxGames">
       <div className="pickGame">
-        <span className="loader"></span>
-        <img></img>
+        {gameLoad && <span className="loader"></span>}
+        <img
+          style={{ display: gameLoad ? "none" : "block" }}
+          src={game.img}
+          alt="game_img"
+          onLoad={() => setGameLoad(false)}
+        ></img>
       </div>
       <div className="boxDescription">
         <div className="boxPrice">
-          <span>Price: $299</span>
+          <span>{game.price}</span>
         </div>
         <div className="boxDescriptionTable">
           <div className="boxDescriptionColumn">
             <span>Model</span>
-            <span></span>
+            <span>{game.Model}</span>
           </div>
           <div className="boxDescriptionColumn">
             <span>Mark</span>
-            <span></span>
+            <span>{game.Mark}</span>
           </div>
           <div className="boxDescriptionColumn">
             <span>HD/SSD</span>
-            <span></span>
+            <span>{game.HD_SSD}</span>
           </div>
           <div className="boxDescriptionColumn">
             <span>Teraflops</span>
-            <span></span>
+            <span>{game.Teraflops}</span>
           </div>
           <div className="boxDescriptionColumn">
             <span>Video</span>
-            <span></span>
+            <span>{game.Video}</span>
           </div>
           <div className="boxDescriptionColumn">
             <span>Audio</span>
-            <span></span>
+            <span>{game.Audio}</span>
           </div>
         </div>
         <Link className="buyNow">Buy Now</Link>
       </div>
     </div>
+    // ))}
   );
 };
 

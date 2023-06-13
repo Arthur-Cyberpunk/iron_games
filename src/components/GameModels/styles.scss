@@ -1,6 +1,6 @@
 .containerSection {
   width: 100%;
-  padding: 0 10%;
+  padding: 0 20%;
   background-color: #000;
 
   .boxModels {
@@ -8,10 +8,8 @@
     flex-direction: column;
 
     .boxTitle {
-      //margin: 0 auto;
       text-align: center;
       color: #fff;
-      //max-width: 50rem;
       margin-bottom: 5rem;
 
       h3 {
@@ -32,10 +30,10 @@
     }
 
     .boxGameContent {
+      width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       gap: 1rem;
-      padding-left: 2rem;
 
       @media (max-width: 1050px) {
         flex-direction: column;
@@ -65,4 +63,9 @@
       }
     }
   }
+}
+
+.colored-button {
+  background-color: #6879c2 !important;
+  color: white;
 }
