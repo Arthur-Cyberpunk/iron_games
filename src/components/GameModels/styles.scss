@@ -1,0 +1,67 @@
+.containerSection {
+    width: 100%;
+    padding: 0 20%;
+  background-color: #000;
+
+  .boxModels {
+    display: flex;
+    flex-direction: column;
+
+    .boxTitle {
+      margin: 0 auto;
+      text-align: center;
+      color: #fff;
+      max-width: 50rem;
+      margin-bottom: 5rem;
+
+      h3 {
+        font-size: 2.2rem;
+        font-weight: 500;
+      }
+
+      h2 {
+        font-size: 3.2rem;
+        margin: 0.5rem 0 1rem 0;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #fff;
+        line-height: 1.5;
+      }
+    }
+
+    .boxGameContent {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+        @media (max-width: 1050px) {
+            flex-direction: column;
+            gap: 5rem;
+          }
+
+        .pickGameModel {
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+
+            button {
+                font-size: 1.5rem;
+                font-weight: 600;
+                border: none;
+                cursor: pointer;
+                padding: 1rem 2rem;
+                background-color: #e9e9e9;
+                transition: all 0.2s;
+                text-align: left;
+            
+                &:hover {
+                  background-color: #6879c2;
+                  color: white;
+                }
+              }
+        }
+    }
+  }
+}
