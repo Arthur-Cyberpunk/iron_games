@@ -1,14 +1,15 @@
 .boxGames {
-  gap: 11rem;
+  //gap: 11rem;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 75%;
-  //padding: 0 15%;
+  justify-content: center;;
+  width: 50%;
+  //max-width: 75%;
+  //padding: 0 10%;
 
-  @media (max-width: 1200px) {
-    gap: 2rem;
-  }
+  // @media (max-width: 1050px) {
+  //     display: flex;
+  //     justify-content: center;
+  // }
 
   @media (max-width: 700px) {
     flex-direction: column;
@@ -18,40 +19,11 @@
   }
 
   .pickGame {
-    width: 50rem;
+    //width: 50rem;
     position: relative;
 
     @media (max-width: 700px) {
       width: 100%;
-    }
-
-    img {
-      width: 100%;
-      //margin-top: 6rem;
-    }
-
-    .loader {
-      width: 48px;
-      height: 48px;
-      border: 5px solid #00000042;
-      border-bottom-color: #ff3d00;
-      border-radius: 50%;
-      display: inline-block;
-      box-sizing: border-box;
-      animation: rotation 1s linear infinite;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 40%;
-      right: 43%;
-    }
-
-    @keyframes rotation {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
     }
   }
 
@@ -61,7 +33,7 @@
   }
 
   .boxDescription {
-    width: 20rem;
+    width: 50%;
 
     .boxPrice {
       width: 100%;

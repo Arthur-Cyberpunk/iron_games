@@ -1,10 +1,8 @@
 import { useState } from "react";
-import { GAME_DATA } from "../../mock/gameData.js";
-import CardBox from "../CardBox";
 import "./styles.scss";
 
 const GameModels = () => {
-  const [active, setActive] = useState("FourthCar");
+  const [active, setActive] = useState("FirstCar");
   const [colorBtn, setColorBtn] = useState("btn1");
 
   const btnID = (id) => {
@@ -37,7 +35,7 @@ const GameModels = () => {
             >
               Xbox Series X
             </button>
-            <button
+            {/* <button
               className={`${coloringButton("btn2")}`}
               id="btn2"
               onClick={() => {
@@ -56,8 +54,8 @@ const GameModels = () => {
               }}
             >
               Playstation 5
-            </button>
-            <button
+            </button> */}
+            {/* <button
               className={`${coloringButton("btn4")}`}
               id="btn4"
               onClick={() => {
@@ -86,15 +84,15 @@ const GameModels = () => {
               }}
             >
               Nintendo Switch
-            </button>
+            </button> */}
           </div>
 
-          {active === "FirstCar" && <CardBox data={GAME_DATA} gameID={0} />}
+          {/* {active === "FirstCar" && <CardBox data={GAME_DATA} gameID={0} />}
           {active === "SecondCar" && <CardBox data={GAME_DATA} gameID={1} />}
           {active === "ThirdCar" && <CardBox data={GAME_DATA} gameID={2} />}
           {active === "FourthCar" && <CardBox data={GAME_DATA} gameID={3} />}
           {active === "FifthCar" && <CardBox data={GAME_DATA} gameID={4} />}
-          {active === "SixthCar" && <CardBox data={GAME_DATA} gameID={5} />}
+          {active === "SixthCar" && <CardBox data={GAME_DATA} gameID={5} />} */}
         </div>
       </div>
     </section>

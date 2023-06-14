@@ -1,27 +1,15 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.scss";
 
-const CardBox = (data, gameID) => {
-  const [gameLoad, setGameLoad] = useState(true);
-  console.log(data.data);
-  console.log(gameID);
+const CardBox = (data) => {
+  
   return (
     <>
-      {data.data[3].map((game, id) => (
+      {data.data[data.gameID].map((game, id) => (
         <div key={id} className="boxGames">
-          <div className="pickGame">
-            {gameLoad && <span className="loader"></span>}
-            <img
-              style={{ display: gameLoad ? "none" : "block" }}
-              src={game.img}
-              alt="game_img"
-              onLoad={() => setGameLoad(false)}
-            ></img>
-          </div>
           <div className="boxDescription">
             <div className="boxPrice">
-              <span>Price: {game.price}</span>
+              <span>Price: ${game.price}</span>
             </div>
             <div className="boxDescriptionTable">
               <div className="boxDescriptionColumn">
