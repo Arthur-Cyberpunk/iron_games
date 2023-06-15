@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./styles.scss";
 
 const CardBox = (data) => {
@@ -37,7 +36,7 @@ const CardBox = (data) => {
                 <span>{game.audio}</span>
               </div>
             </div>
-            <Link className="buyNow">Buy Now</Link>
+            <a href="#booking-section" className="buyNow">Buy Now</a>
           </div>
         </div>
       ))}

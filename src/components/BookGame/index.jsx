@@ -74,7 +74,7 @@ const BookGame = () => {
 
   return (
     <>
-      <section className="containerBookGame">
+      <section id="booking-section" className="containerBookGame">
         {modalOpen ? <div className="modalOverlay"></div> : <></>}
         <div className="boxForm">
           <h2>Book a game</h2>
