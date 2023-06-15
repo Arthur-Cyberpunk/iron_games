@@ -16,7 +16,7 @@ const GameModels = () => {
   };
 
   return (
-    <section className="containerSection">
+    <section className="containerGameModels">
       <div className="boxModels">
         <div className="boxTitle">
           <h3>Video Game Models</h3>
@@ -27,7 +27,7 @@ const GameModels = () => {
           </p>
         </div>
         <div className="boxGameContent">
-          <div className="pokoto">
+          <div className="boxButtonModel">
             <div className="pickGameModel">
               <button
                 className={`${coloringButton("btn1")}`}

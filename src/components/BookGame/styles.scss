@@ -46,6 +46,7 @@
       font-weight: 700;
       margin-bottom: 1rem;
       font-family: "Fira Code", monospace;
+      background-color: #fff;
 
       @media (max-width: 1300px) {
         font-size: 1.4rem;
@@ -68,6 +69,7 @@
 
       .iconX {
         cursor: pointer;
+        background-color: #f8d7da;
       }
     }
 
@@ -87,6 +89,7 @@
 
       .iconX {
         cursor: pointer;
+        background-color: #a3d8a6;
       }
     }
 
@@ -97,6 +100,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        background-color: #fff;
 
         label {
           display: flex;
@@ -105,6 +109,7 @@
           font-weight: 600;
           margin-bottom: 1.2rem;
           font-family: "Fira Code", monospace;
+          background-color: #fff;
 
           @media (max-width: 1300px) {
             font-size: 1rem;
@@ -112,6 +117,7 @@
 
           .iconGame {
             font-size: 1.6rem;
+            background-color: #fff;
 
             @media (max-width: 1300px) {
               font-size: 1.2rem;
@@ -129,6 +135,7 @@
           padding: 0.5rem 0.5rem;
           margin-bottom: 2rem;
           font-family: "Fira Code", monospace;
+          background-color: #fff;
         }
       }
 

@@ -30,10 +30,13 @@
 
     h2 {
       font-family: "Fira Code", monospace;
+      background-color: #6879c2;
     }
 
     .closeX {
       font-size: 1.8rem;
+      cursor: pointer;
+      background-color: #6879c2;
     }
   }
 
@@ -49,9 +52,10 @@
       font-size: 1.2rem;
       font-weight: 700;
       font-family: "Fira Code", monospace;
+      background-color: #bcc4e7;
 
-      i {
-        width: 50%;
+      .information {
+        background-color: #bcc4e7;
       }
     }
 
@@ -61,6 +65,7 @@
       font-weight: 500;
       line-height: 1.6;
       font-family: "Fira Code", monospace;
+      background-color: #bcc4e7;
     }
   }
 

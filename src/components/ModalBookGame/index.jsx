@@ -22,7 +22,7 @@ const ModalBookGame = (props) => {
       </div>
       <div className="modalMessage">
         <h4>
-          <FaInfoCircle />
+          <FaInfoCircle className="information"/>
           &nbsp;Upon completing this reservation enquiry, you will receive:
         </h4>
         <p>

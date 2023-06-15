@@ -1,6 +1,6 @@
-.containerSection {
+.containerGameModels {
   width: 100%;
-  padding: 0 10%;
+  padding: 4% 10%;
   background-color: #000;
 
   .boxModels {
@@ -33,15 +33,13 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
-      //justify-content: center;
-      //gap: 1rem;
 
       @media (max-width: 1050px) {
         flex-direction: column;
         gap: 5rem;
       }
 
-      .pokoto {
+      .boxButtonModel {
         width: 100%;
         display: flex;
         justify-content: center;

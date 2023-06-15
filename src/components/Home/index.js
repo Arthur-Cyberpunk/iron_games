@@ -4,7 +4,7 @@ import "./styles.scss";
 
 const Home = () => {
   return (
-    <section className="containerHome">
+    <section id="home" className="containerHome">
       <div className="boxInfo">
         <div className="textInfo">
           <h4>Plan your trip now</h4>
