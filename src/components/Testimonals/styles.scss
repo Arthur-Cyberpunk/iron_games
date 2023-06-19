@@ -1,4 +1,119 @@
-.TestimonalsSection {
-    height: 100vh;
-    background-color: #000;
+.containerTestimonals {
+  //height: 100vh;
+  padding: 10rem 0;
+  //color: #fff;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .boxtitle {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 70rem;
+      margin-bottom: 5rem;
+      color: #fff;
+
+      h4 {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      h2 {
+        font-size: 3.5rem;
+        margin-bottom: 1.4rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+      }
+    }
+
+    .boxTestimonals {
+      display: flex;
+      gap: 3rem;
+      width: 100%;
+      justify-content: center;
+      padding: 3rem;
+
+      @media (max-width: 1000px) {
+        padding: 0;
+      }
+
+      .testimonal {
+        background-color: white;
+        box-shadow: 0 20px 40px 0 rgb(0 0 0 / 8%);
+        width: 54rem;
+        padding: 5.5rem;
+        position: relative;
+
+        @media (max-width: 1000px) {
+          padding: 5rem 3rem;
+        }
+
+        p {
+          background-color: white;
+          font-size: 2.4rem;
+          font-weight: 500;
+        }
+
+        .boxPerson {
+          background-color: white;
+          display: flex;
+
+          .personId {
+            width: 100%;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            margin-top: 3rem;
+            background-color: white;
+
+            img {
+              width: 7rem;
+              height: 7rem;
+              border-radius: 50%;
+              background-color: white;
+            }
+
+            .infoPerson {
+                width: 100%;
+              display: flex;
+              justify-content: space-between;
+              background-color: white;
+
+              .personName {
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+
+                h4 {
+                  background-color: white;
+                  font-size: 1.8rem;
+                }
+
+                p {
+                  font-size: 2rem;
+                  font-weight: 400;
+                }
+              }
+
+                .icon {
+                  background-color: white;
+                  color: #6879c2;
+                  font-size: 6.2rem;
+  
+                  @media (max-width: 470px) {
+                    display: none;
+                  }
+                }
+            }
+          }
+        }
+      }
+    }
+  }
 }

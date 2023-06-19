@@ -33,7 +33,7 @@ const ChooseUs = () => {
                 <h4>Cross Country Drive</h4>
                 <p>
                   Take your driving experience to the next level with our
-                  top-notch vehicles for your cross-country adventures.
+                  top-notch video games for your adventures.
                 </p>
               </div>
             </div>
