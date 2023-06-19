@@ -1,5 +1,6 @@
 import { BsFillBookmarksFill } from "react-icons/bs";
-import controle from "../../assets/controle.png";
+import john from "../../assets/john.png";
+import tony from "../../assets/tony.png";
 import "./styles.scss";
 
 const Testimonals = () => {
@@ -16,39 +17,38 @@ const Testimonals = () => {
             experiences with you.
           </p>
         </div>
-
         <div className="boxTestimonals">
           <div className="testimonal">
             <p>
-              "We rented a car from this website and had an amazing experience!
-              The booking was easy and the rental rates were very affordable. "
+              "We bought a video game from this website and had an amazing
+              experience! The booking was easy and the values rates were very
+              affordable. "
             </p>
             <div className="boxPerson">
               <div className="personId">
-                <img src={controle}></img>
+                <img src={john}></img>
                 <div className="infoPerson">
                   <div className="personName">
-                    <h4>Parry Hotter</h4>
-                    <p>Belgrade</p>
+                    <h4>John Shelby</h4>
+                    <p>Birmingham</p>
                   </div>
                   <BsFillBookmarksFill className="icon" />
                 </div>
               </div>
             </div>
           </div>
-
           <div className="testimonal box-2">
             <p>
-              "The car was in great condition and made our trip even better.
-              Highly recommend for this car rental website!"
+              "The video game was in great condition and made our gameplay even
+              better. Highly recommend buy for this video game website!"
             </p>
             <div className="boxPerson">
               <div className="personId">
-                <img src={controle}></img>
+                <img src={tony}></img>
                 <div className="infoPerson">
                   <div className="personName">
-                    <h4>Ron Rizzly</h4>
-                    <p>Novi Sad</p>
+                    <h4>Tony Stark</h4>
+                    <p>New York</p>
                   </div>
                   <BsFillBookmarksFill className="icon" />
                 </div>
