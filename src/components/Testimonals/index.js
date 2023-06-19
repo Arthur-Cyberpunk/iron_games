@@ -37,7 +37,7 @@ const Testimonals = () => {
             </div>
           </div>
 
-          <div className="testimonal">
+          <div className="testimonal box-2">
             <p>
               "The car was in great condition and made our trip even better.
               Highly recommend for this car rental website!"
