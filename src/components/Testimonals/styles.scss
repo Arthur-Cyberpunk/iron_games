@@ -1,11 +1,13 @@
 .containerTestimonals {
-  //height: 100vh;
   padding: 6rem 3rem;
+  margin-top: 8rem;
+  background-color: #2d2d2d;
 
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #2d2d2d;
 
     .boxtitle {
       display: flex;
@@ -14,20 +16,24 @@
       max-width: 70rem;
       margin-bottom: 5rem;
       color: #fff;
+      background-color: #2d2d2d;
 
       h4 {
         font-size: 2rem;
         font-weight: 500;
+        background-color: #2d2d2d;
       }
 
       h2 {
         font-size: 3.5rem;
         margin-bottom: 1.4rem;
+        background-color: #2d2d2d;
       }
 
       p {
         font-size: 1.2rem;
         line-height: 1.4;
+        background-color: #2d2d2d;
       }
     }
 
@@ -36,16 +42,17 @@
       gap: 3rem;
       width: 100%;
       justify-content: center;
+      background-color: #2d2d2d;
 
       .testimonal {
         background-color: white;
-        box-shadow: 0 20px 40px 0 rgb(0 0 0 / 8%);
+        box-shadow: 0 20px 40px 0 rgba(104, 121, 194, 30%);
         width: 44rem;
         padding: 4rem;
         position: relative;
 
         @media (max-width: 1000px) {
-            width: 36rem;
+          width: 36rem;
           padding: 4rem 3rem;
         }
 
@@ -53,12 +60,11 @@
           background-color: white;
           font-size: 2rem;
           font-weight: 500;
-          font-family: 'Fira Code', monospace;
+          font-family: "Fira Code", monospace;
 
           @media (max-width: 1000px) {
             font-size: 1.5rem;
           }
-          
         }
 
         .boxPerson {
@@ -86,7 +92,7 @@
             }
 
             .infoPerson {
-                width: 100%;
+              width: 100%;
               display: flex;
               justify-content: space-between;
               background-color: white;
@@ -116,15 +122,15 @@
                 }
               }
 
-                .icon {
-                  background-color: white;
-                  color: #6879c2;
-                  font-size: 4rem;
-  
-                  @media (max-width: 500px) {
-                    display: none;
-                  }
+              .icon {
+                background-color: white;
+                color: #6879c2;
+                font-size: 4rem;
+
+                @media (max-width: 500px) {
+                  display: none;
                 }
+              }
             }
           }
         }
@@ -133,8 +139,8 @@
   }
 
   .box-2 {
-  @media (max-width: 1000px) {
-    display: none;
+    @media (max-width: 1000px) {
+      display: none;
+    }
   }
-}
 }
