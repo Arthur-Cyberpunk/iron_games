@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { HiOutlineChevronDown } from "react-icons/hi2";
 import "./styles.scss";
 
 const Faq = () => {
@@ -38,7 +39,7 @@ const Faq = () => {
                   className={`question  ${getClassQuestion("q1")}`}
                 >
                   <p>1. What is special about comparing video game deals?</p>
-                  <i className="fa-solid fa-angle-down"></i>
+                  <HiOutlineChevronDown className="arrowFaq"/>
                 </div>
                 <div
                   id="q1"
@@ -61,7 +62,7 @@ const Faq = () => {
                   className={`question ${getClassQuestion("q2")}`}
                 >
                   <p>2. How do I find the video game deals?</p>
-                  <i className="fa-solid fa-angle-down"></i>
+                  <HiOutlineChevronDown className="arrowFaq"/>
                 </div>
                 <div
                   id="q2"
@@ -82,7 +83,7 @@ const Faq = () => {
                   className={`question ${getClassQuestion("q3")}`}
                 >
                   <p>3. How do I find such low video game prices?</p>
-                  <i className="fa-solid fa-angle-down"></i>
+                  <HiOutlineChevronDown className="arrowFaq"/>
                 </div>
                 <div
                   id="q3"
