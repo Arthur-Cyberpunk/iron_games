@@ -9,11 +9,11 @@ const Footer = () => {
         <div className="footerContent">
           <ul className="footerContent1">
             <li>
-              <span>CAR</span> Rental
+              <span>Iron</span> Games
             </li>
             <li>
-              We offers a big range of vehicles for all your driving needs. We
-              have the perfect car to meet your needs.
+              We offers a big range of video games. We
+              have the perfect video game to meet your needs.
             </li>
             <li>
               <a href="tel:123456789">
@@ -24,10 +24,10 @@ const Footer = () => {
             <li>
               <a
                 href="mailto: 
-                  carrental@gmail.com"
+                  irongames@gmail.com"
               >
                 <AiFillMail className="contactIcon" />
-                carrental@gmail.com
+                irongames@gmail.com
               </a>
             </li>
 
@@ -36,9 +36,9 @@ const Footer = () => {
                 style={{ fontSize: "14px" }}
                 target="_blank"
                 rel="noreferrer"
-                href="https://xpeedstudio.com/"
+                href="https://irongames.com/"
               >
-                Design by XpeedStudio
+                Design by Irongames
               </a>
             </li>
           </ul>
@@ -46,7 +46,7 @@ const Footer = () => {
           <ul className="footerContent2">
             <li>Company</li>
             <li>
-              <a href="#home">New York</a>
+              <a href="#home">Florianópolis</a>
             </li>
             <li>
               <a href="#home">Careers</a>

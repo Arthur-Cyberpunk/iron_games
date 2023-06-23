@@ -69,12 +69,6 @@ const Header = () => {
               Contact
             </Link>
           </li>
-          <li>
-            <Link to="/">Sign in</Link>
-            <Link className="register" to="/">
-              Register
-            </Link>
-          </li>
         </ul>
       </div>
     </nav>
