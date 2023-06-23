@@ -7,12 +7,12 @@ const Home = () => {
     <section id="home" className="containerHome">
       <div className="boxInfo">
         <div className="textInfo">
-          <h4>Plan your trip now</h4>
+          <h4>Plan your gameplay now</h4>
           <h1>
-            Save <span>big</span> with our car rental
+            Save <span>big</span> with our video game
           </h1>
           <p>
-            Rent the car of your dreams. Unbeatable prices, unlimited miles,
+            Buy the video game of your dreams. Unbeatable prices, unlimited miles,
             flexible pick-up options and much more.
           </p>
           <div>

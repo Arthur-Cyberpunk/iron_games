@@ -22,16 +22,16 @@ const Header = () => {
         </div>
       </div>
       <div className="boxOptions">
-        <Link to="/" target="_blank" rel="noreferrer">
+        <Link to="/">
           Home
         </Link>
-        <Link to="/" target="_blank" rel="noreferrer">
+        <Link to="/about">
           About
         </Link>
-        <Link to="/" target="_blank" rel="noreferrer">
+        <Link to="/testimonials">
           Testimonials
         </Link>
-        <Link to="/" target="_blank" rel="noreferrer">
+        <Link to="/contact">
           Contact
         </Link>
       </div>
