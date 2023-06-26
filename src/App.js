@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact/Contact";
 import Home from "./Pages/Home";
-import Testimonials from "./Pages/Testimonials/Testimonials";
+import Testimonials from "./Pages/Testimonials";
 import Header from "./components/Header";
 import "./styles/globals.scss";
 
