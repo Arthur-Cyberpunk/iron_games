@@ -50,22 +50,22 @@ const Header = () => {
         </div>
         <ul>
           <li>
-            <Link to="/" target="_blank" rel="noreferrer">
+            <Link to="/">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/" target="_blank" rel="noreferrer">
+            <Link to="/about">
               About
             </Link>
           </li>
           <li>
-            <Link to="/" target="_blank" rel="noreferrer">
+            <Link to="/testimonials">
               Testimonials
             </Link>
           </li>
           <li>
-            <Link to="/" target="_blank" rel="noreferrer">
+            <Link to="/contact">
               Contact
             </Link>
           </li>

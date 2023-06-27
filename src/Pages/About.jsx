@@ -7,6 +7,9 @@ const AboutPage = () => {
     <>
       <About />
       <Plan />
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
       <Footer />
     </>
   );

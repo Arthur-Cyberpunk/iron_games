@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import controle from "../../assets/controle.png";
 import "./styles.scss";
 
@@ -16,8 +15,8 @@ const HomePlay = () => {
             flexible pick-up options and much more.
           </p>
           <div>
-            <Link>Book Ride</Link>
-            <Link>Learn More</Link>
+            <a href="#booking-section">Book Ride</a>
+            <a>Learn More</a>
           </div>
         </div>
         <img className="logoController" src={controle} alt="logo control"></img>
