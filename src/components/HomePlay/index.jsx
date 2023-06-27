@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import controle from "../../assets/controle.png";
 import "./styles.scss";
 
-const Home = () => {
+const HomePlay = () => {
   return (
     <section id="home" className="containerHome">
       <div className="boxInfo">
@@ -20,10 +20,10 @@ const Home = () => {
             <Link>Learn More</Link>
           </div>
         </div>
-        <img className="logoController" src={controle} alt=""></img>
+        <img className="logoController" src={controle} alt="logo control"></img>
       </div>
     </section>
   );
 };
 
-export default Home;
+export default HomePlay;
