@@ -40,7 +40,7 @@ const Testimonals = () => {
           <div className="testimonal box-2">
             <p>
               "The video game was in great condition and made our gameplay even
-              better. Highly recommend buy for this video game website!"
+              better. Highly recommend buy for this video game website and i don't need another!"
             </p>
             <div className="boxPerson">
               <div className="personId">

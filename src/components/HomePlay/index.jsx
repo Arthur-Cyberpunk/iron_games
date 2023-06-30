@@ -8,7 +8,7 @@ const HomePlay = () => {
         <div className="textInfo">
           <h4>Plan your gameplay now</h4>
           <h1>
-            Save <span>big</span> with our video game
+            Save <span>big</span> with our video games
           </h1>
           <p>
             Buy the video game of your dreams. Unbeatable prices, unlimited miles,
