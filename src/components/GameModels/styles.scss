@@ -3,6 +3,10 @@
   padding: 4% 10%;
   background-color: #000;
 
+  @media (max-width: 1200px) {
+    margin-top: 10rem;
+  }
+
   .boxModels {
     display: flex;
     flex-direction: column;
