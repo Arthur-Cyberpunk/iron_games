@@ -14,7 +14,7 @@ const HomePlay = () => {
             Buy the video game of your dreams. Unbeatable prices, unlimited miles,
             flexible pick-up options and much more.
           </p>
-          <div>
+          <div className="bookRide">
             <a href="#booking-section">Book Ride</a>
             <a>Learn More</a>
           </div>
