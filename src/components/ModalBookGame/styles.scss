@@ -23,7 +23,7 @@
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1rem;
     font-size: 1rem;
     text-transform: uppercase;
     font-family: "Fira Code", monospace;
@@ -95,7 +95,7 @@
   .modalPersonInfo {
     display: flex;
     flex-direction: column;
-    padding: 1rem 1rem;
+    padding: 1rem 1.5rem;
 
     h4 {
       font-size: 1.2rem;
@@ -125,7 +125,7 @@
           gap: 0.4rem;
 
           label {
-            color: #777;
+            color: #fff;
             font-size: 1rem;
             font-weight: 500;
             font-family: "Fira Code", monospace;
@@ -160,7 +160,7 @@
           gap: 0.4rem;
 
           label {
-            color: #777;
+            color: #fff;
             font-size: 1rem;
             font-weight: 500;
             font-family: "Fira Code", monospace;
@@ -169,7 +169,7 @@
           input {
             background-color: #dbdbdb;
             border: none;
-            color: #555;
+            color: #fff;
             font-weight: 500;
             outline: none;
             padding: 14px 15px;
@@ -184,7 +184,7 @@
 
       .infoCheckbox {
         align-items: center;
-        color: #565454;
+        color: #fff;
         display: flex;
         justify-content: space-between;
         font-size: 1.6rem;
@@ -207,7 +207,7 @@
           }
 
           p {
-            color: #777;
+            color: #fff;
             font-size: 1rem;
             font-family: "Fira Code", monospace;
           }
