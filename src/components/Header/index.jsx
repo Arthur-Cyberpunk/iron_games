@@ -50,22 +50,22 @@ const Header = () => {
         </div>
         <ul>
           <li>
-            <Link to="/">
+            <Link to="/" onClick={openNav}>
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about">
+            <Link to="/about" onClick={openNav}>
               About
             </Link>
           </li>
           <li>
-            <Link to="/testimonials">
+            <Link to="/testimonials" onClick={openNav}>
               Testimonials
             </Link>
           </li>
           <li>
-            <Link to="/contact">
+            <Link to="/contact" onClick={openNav}>
               Contact
             </Link>
           </li>
